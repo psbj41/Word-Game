@@ -47,6 +47,7 @@
     border-radius: 20px;
     margin: 0px 10px;
     box-shadow: 0px 10px 25px -9px rgba(0, 0, 0, 0.75);
+    position: relative;
 }
 
 .content .correct .correct-name{
@@ -56,17 +57,36 @@
     margin: 10px 5px;
     padding: 10px;
     border-radius: 10px;
-    background-color: #53DFD1;
+    background-color: #05445E;
     box-shadow: 3px 5px 10px -10px rgba(0, 0, 0, 0.75);    
 }
 
 .correct-name h2{
-    background-color: #53DFD1;
-    color: #274472;
+    background-color: #05445E;
+    color: white;
+}
+
+.correct .correct-name-bt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #189AB4;
+    box-shadow: 3px 5px 10px -10px rgba(0, 0, 0, 0.75);
+}
+.correct-name-bt h2{
+    background-color: #189AB4;
+    color: white;
 }
 
 .content .word{
-    background-color: #59D7EE;
+    position: relative;
+    background-color: #05445E;
     padding: 10px;
     width: 33%;
     height: 570px;
@@ -82,13 +102,25 @@
     margin: 10px 5px;
     padding: 10px;
     border-radius: 10px;
-    background-color: #59D7EE;
+    background-color: #05445E;
     /* box-shadow: 3px 5px 10px -10px rgba(0, 0, 0, 0.75); */
 }
 
 .word-name h2{
-    background-color: #59D7EE;
-    color: #274472;
+    background-color: #05445E;
+    color: white;
+}
+
+.word-name-dropping{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: none;
+}
+
+.word-name-dropping h2{
+    background: none;
+    color: white;
 }
 
 .content .incorrect{
@@ -99,6 +131,7 @@
     border-radius: 20px;
     margin: 0px 10px;
     box-shadow: 0px 10px 25px -9px rgba(0, 0, 0, 0.75);
+    position: relative;
 }
 
 .content .incorrect .incorrect-name{
@@ -108,12 +141,31 @@
     margin: 10px 5px;
     padding: 10px;
     border-radius: 10px;
-    background-color: #ff3232;
+    background-color: #05445E;
     box-shadow: 3px 5px 10px -10px rgba(0, 0, 0, 0.75);
 }
 
 .incorrect-name h2{
-    background-color: #ff3232;
+    background-color: #05445E;
+    color: white;
+}
+
+.content .incorrect .incorrect-name-bt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #be0000;
+    box-shadow: 3px 5px 10px -10px rgba(0, 0, 0, 0.75);
+}
+
+.incorrect-name-bt h2{
+    background-color: #be0000;
     color: white;
 }
 
@@ -140,19 +192,18 @@
 }
 .footer .input input{
     border: none;
-    border-radius: 10px;
+    border-radius: 999px;
     padding: 10px;
     width: 400px;
-    cursor: pointer;
     outline: none;
 }
 
 .footer .score{
     margin: 0px 10px;
-    border-radius: 10px;
+    border-radius: 999px;
 }
 .footer .score button{
-    background-color: none;
+    background:none;
     border: none;
     margin: 0px 10px;
     padding: 10px;
@@ -160,3 +211,21 @@
 }
 
 /* End Footer */
+
+
+
+
+/* Moving Word Top To Bottom */
+
+/* .word-name-dropping{
+    position: absolute;
+    animation: myanimation 5s 2;
+    animation-direction:normal;
+    bottom: 100px;
+}
+
+@keyframes myanimation{
+    100%{
+        bottom: 0px;
+    }
+} */
